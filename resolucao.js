@@ -1,6 +1,6 @@
 // Desafio 1
 
-function converteFormatoHora(time) {
+function convertTimeFormat(time) {
   const [_, hours, minutes, seconds, amPm] = time.match(/^(\d{1,2}):(\d{1,2}):(\d{1,2})([AP]M)$/);
 
   let convertedTime = '';
@@ -14,4 +14,18 @@ function converteFormatoHora(time) {
   }
 
   return convertedTime;
+}
+
+// Desafio 2
+
+function wordsCounter(phrase) {
+  let counter = 1;
+
+  for (let index = 0; index < phrase.length; index += 1) {
+    if (phrase[index] === phrase[index].toUpperCase()) {
+      counter += 1;
+    }
+  }
+
+  return counter;
 }
