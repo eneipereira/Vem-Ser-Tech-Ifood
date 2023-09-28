@@ -52,3 +52,15 @@ function uniqueNumber(numbers) {
 
   return uniqueNumbers;
 }
+
+// Desafio 4
+
+"Resposta: e"
+
+// Desafio 5
+
+"Resposta: a"
+
+// Desafio 6
+
+"Resposta: b"
