@@ -29,3 +29,26 @@ function wordsCounter(phrase) {
 
   return counter;
 }
+
+// Desafio 3
+
+function uniqueNumber(numbers) {
+  const uniqueNumbers = [];
+
+  for (let index1 = 0; index1 < numbers.length; index1 += 1) {
+    let isRepeated = false;
+
+    for (let index2 = 0; index2 < numbers.length; index2 += 1) {
+      if (index1 !== index2 && numbers[index1] === numbers[index2]) {
+        isRepeated = true;
+        break;
+      }
+    }
+
+    if (!isRepeated) {
+      uniqueNumbers.push(numbers[index1]);
+    }
+  }
+
+  return uniqueNumbers;
+}
